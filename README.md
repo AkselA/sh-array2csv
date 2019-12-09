@@ -26,4 +26,6 @@ source array2csv -a arr1[@] -n 4 -q -p -o "a.txt" -s "; "
 
 ```
 
+_Tested on OS X 10.11.6 and Bash 3.2.57_
+
 
