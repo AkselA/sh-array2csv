@@ -29,7 +29,7 @@ usage () {
   arr1=("Filename" "Codec" "Sample format" "Sample rate" "02 New Feelings.m4a"
         "aac" "fltp" "44100" "01 Runny Mascara.m4a" "aac" "fltp" "44100")
 
-  . ./array2csv.sh -a arr1[@] -n 4 -q -p -o "a.txt" -s "; "
+  . array2csv -a arr1[@] -n 4 -q -p -o "a.txt" -s "; "
 
   arr2=("col1" "r1c1" "r2c1" "r3c1" "r4c1" "r5c1"
         "col2" "r1c2" "r2c2" "r3c2" "r4c2" "r5c2" 

@@ -6,7 +6,11 @@ chmod a+x "array2csv.sh"
 
 if cp "array2csv.sh" "/usr/local/bin/array2csv"
 then
-    if . array2csv -h
+    arr1=("File"        "Codec" "Sample format" "Sample rate" 
+          "track 1.m4a" "aac"   "fltp"          "44100"
+          "track 2.m4a" "aac"   "fltp"          "44100")
+
+    if . array2csv -h && . ./array2csv.sh -a arr1[@] -n 4 -q -p -o -s "; " /tmp/test.csv
     then
         printf "%s\n" "Successfully installed '/usr/local/bin/array2csv'"
     else
